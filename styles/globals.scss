@@ -291,10 +291,6 @@
 
 
 /* Text Styles */
-* {
-  font-family: 'Inter';
-  font-style: normal;
-}
 
 .text-xs-normal {
   font-weight: 400;
@@ -510,4 +506,63 @@
   font-weight: 700;
   font-size: 60px;
   line-height: 60px;
+}
+
+@font-face {
+  font-family: 'Inter-Black';
+  src: url('../public/font/Inter/inter/Inter-Black.ttf');
+}
+
+@font-face {
+  font-family: 'Inter-Bold';
+  src: url('../public/font/Inter/inter/Inter-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Inter-Regular';
+  src: url('../public/font/Inter/inter/Inter-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Inter-ExtraBold';
+  src: url('../public/font/Inter/inter/Inter-ExtraBold.ttf');
+}
+
+@font-face {
+  font-family: 'Inter-ExtraLight';
+  src: url('../public/font/Inter/inter/Inter-ExtraLight.ttf');
+}
+
+@font-face {
+  font-family: 'Inter-Light';
+  src: url('../public/font/Inter/inter/Inter-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Inter-Medium';
+  src: url('../public/font/Inter/inter/Inter-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'Inter-Regular';
+  src: url('../public/font/Inter/inter/Inter-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Inter-SemiBold';
+  src: url('../public/font/Inter/inter/Inter-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'Inter-Thin';
+  src: url('../public/font/Inter/inter/Inter-Thin.ttf');
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
 }
