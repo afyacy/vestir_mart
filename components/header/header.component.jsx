@@ -14,7 +14,6 @@ import CartIcon from '../../public/images/icons/cart.svg'
 import MenuIcon from '../../public/images/icons/menu.svg'
 import DownArrowIconBlack from '../../public/images/icons/chevron-down-black.svg'
 import GiftIcon from '../../public/images/icons/gift.svg'
-import Logo from '../../public/images/logo.svg'
 
 const Header = () => {
   return (
@@ -42,8 +41,8 @@ const Header = () => {
       </div>
       <hr className={styles.line}/>
       <div className={styles.layerTwo}>
-        <div>
-          <Image src={Logo} alt="logo"/>
+        <div className={styles.logo}>
+          VM
         </div>
         <div className={styles.search}>
           <div className={styles.dropdown}>
@@ -112,7 +111,7 @@ const Header = () => {
             <span>&#8373; GHS</span>
             <Image src={DownArrowIconBlack} alt="icon"/>
           </div>
-          <Image src={LineIcon} alt="icon"/>
+          <div className={styles.verticalLineCL}></div>
           <div className={styles.language}>
             <span>English</span>
             <Image src={DownArrowIconBlack} alt="icon"/>

@@ -61,6 +61,11 @@
   color: var(--gray_default_100);
 }
 
+.logo {
+  font-family: 'Nunito-Black';
+  font-size: 3vw;
+}
+
 .search {
   display: flex;
   align-content: center;
@@ -215,6 +220,11 @@
   align-items: center;
   display: flex;
   cursor: pointer;
+}
+
+.verticalLineCL {
+  border-right: 0.1px solid var(--gray_default_300);
+  padding: 8px 0px;
 }
 
 .language {
