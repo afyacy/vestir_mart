@@ -14,7 +14,7 @@ import CartIcon from '../../public/images/icons/cart.svg'
 import MenuIcon from '../../public/images/icons/menu.svg'
 import DownArrowIconBlack from '../../public/images/icons/chevron-down-black.svg'
 import GiftIcon from '../../public/images/icons/gift.svg'
-import Logo from '../../public/images/Logo.svg'
+import Logo from '../../public/images/logo.svg'
 
 const Header = () => {
   return (
