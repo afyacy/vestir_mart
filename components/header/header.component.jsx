@@ -4,7 +4,6 @@ import Link from 'next/link'
 
 import FindStoreIcon from '../../public/images/icons/location.svg'
 import SupportIcon from '../../public/images/icons/mail.svg'
-import LineIcon from '../../public/images/icons/line.svg'
 import DownArrowIconWhite from '../../public/images/icons/chevron-down-white.svg'
 import SearchIcon from '../../public/images/icons/search.svg'
 import UserIcon from '../../public/images/icons/user.svg'
