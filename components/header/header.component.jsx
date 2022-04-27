@@ -1,5 +1,6 @@
+import styles from './Header.module.scss'
 import Image from 'next/image'
-import {Container, LayerOne, LayerThree, LayerTwo, FindStoreAndSupport, FindStoreContainer, SupportContainer, ContactAndTrackOrder, ContactContainer, TrackContainer, Line, LogoContainer, SearchContainer, DropdownContainer, InputContainer,  ButtonContainer, UserContainer, IconsContainer, RepeatContainer, HeartContainer, CartContainer, DepartmentsAndPageLinks, DepartmentsDropdownContainer, PageLinks, NavLink, ShopContainer, FeaturedContainer, PromotionContainer,  CurrencyAndLanguage, CurrencyContainer, LanguageContainer } from './header.styles.jsx'
+import Link from 'next/link'
 
 import FindStoreIcon from '../../public/images/icons/location.svg'
 import SupportIcon from '../../public/images/icons/mail.svg'
@@ -13,113 +14,113 @@ import CartIcon from '../../public/images/icons/cart.svg'
 import MenuIcon from '../../public/images/icons/menu.svg'
 import DownArrowIconBlack from '../../public/images/icons/chevron-down-black.svg'
 import GiftIcon from '../../public/images/icons/gift.svg'
-
 import Logo from '../../public/images/Logo.svg'
 
 const Header = () => {
   return (
-    <Container>
-      <LayerOne>
-        <FindStoreAndSupport>
-          <FindStoreContainer>
-            <Image src={FindStoreIcon} alt="find-store"/>
+    <div className={styles.container}>
+      <div className={styles.layerOne}>
+        <div className={styles.findstoreSupport}>
+          <div className={styles.findStore}>
+            <Image src={FindStoreIcon} alt="icon"/>
             <span>Find Store</span>
-          </FindStoreContainer>
-          <SupportContainer>
-            <Image src={SupportIcon} alt="find-store"/>
+          </div>
+          <div className={styles.support}>
+            <Image src={SupportIcon} alt="icon"/>
             <span>support@vestirmart.com</span>
-          </SupportContainer>
-        </FindStoreAndSupport>
-        <ContactAndTrackOrder>
-          <ContactContainer>
+          </div>
+        </div>
+        <div className={styles.contactTrackorder}>
+          <div className={styles.contact}>
             Contact
-          </ContactContainer>
-          <Image src={LineIcon} alt="find-store"/>
-          <TrackContainer>
+          </div>
+          <div className={styles.verticalLine}></div>
+          <div>
             Track Your Order
-          </TrackContainer>
-        </ContactAndTrackOrder>
-      </LayerOne>
-
-      <Line/>
-
-      <LayerTwo>
-        <LogoContainer>
-          <Image src={Logo} alt="find-store"/>
-        </LogoContainer>
-        <SearchContainer>
-          <DropdownContainer>
+          </div>
+        </div>
+      </div>
+      <hr className={styles.line}/>
+      <div className={styles.layerTwo}>
+        <div>
+          <Image src={Logo} alt="logo"/>
+        </div>
+        <div className={styles.search}>
+          <div className={styles.dropdown}>
             <span>All Categories</span>
-            <Image src={DownArrowIconWhite} alt="find-store"/>
-          </DropdownContainer>
-          <InputContainer>
+            <Image src={DownArrowIconWhite} alt="icon"/>
+          </div>
+          <div className={styles.input}>
             <input placeholder='Search products here...'/>
-            <ButtonContainer>
-              <Image src={SearchIcon} alt="find-store"/>
-            </ButtonContainer>
-          </InputContainer>
-        </SearchContainer>
-        <IconsContainer>
-          <UserContainer>
-            <Image src={UserIcon} alt="find-store"/>
-          </UserContainer>
-          <RepeatContainer>
-            <Image src={RepeatIcon} alt="find-store"/>
-          </RepeatContainer>
-          <HeartContainer>
-            <Image src={HeartIcon} alt="find-store"/>
-          </HeartContainer>
-          <CartContainer>
-            <Image src={CartIcon} alt="find-store"/>
-          </CartContainer>
-        </IconsContainer>
-      </LayerTwo>
-
-      <LayerThree>
-        <DepartmentsAndPageLinks>
-          <DepartmentsDropdownContainer>
-            <Image src={MenuIcon} alt="find-store"/>
+            <div className={styles.button}>
+              <Image src={SearchIcon} alt="icon"/>
+            </div>
+          </div>
+        </div>
+        <div className={styles.icons}>
+          <div>
+            <Image src={UserIcon} alt="icon"/>
+          </div>
+          <div>
+            <Image src={RepeatIcon} alt="icon"/>
+          </div>
+          <div>
+            <Image src={HeartIcon} alt="icon"/>
+          </div>
+          <div>
+            <Image src={CartIcon} alt="icon"/>
+          </div>
+        </div>
+      </div>
+      <div className={styles.layerThree}>
+        <div className={styles.departmentPagelinks}>
+          <div className={styles.departmentDropdown}>
+            <Image src={MenuIcon} alt="icon"/>
             <span>All Departments</span>
-            <Image src={DownArrowIconWhite} alt="find-store"/>
-          </DepartmentsDropdownContainer>
-          <PageLinks>
-            <NavLink href='#'>
-              Home
-            </NavLink>
-            <ShopContainer>
-              <span>Shop</span>
-              <Image src={DownArrowIconBlack} alt="find-store"/>
-            </ShopContainer>
-            <FeaturedContainer>
-              <span>Featured</span>
-              <Image src={DownArrowIconBlack} alt="find-store"/>
-            </FeaturedContainer>
-            <NavLink href='#'>
+            <Image src={DownArrowIconWhite} alt="icon"/>
+          </div>
+          <div className={styles.pagelinks}>
+            <Link href ="#">Home</Link>
+            <Link href ="#">
+              <a className={styles.shop}>
+                <span>Shop</span>
+                <Image src={DownArrowIconBlack} alt="icon"/>
+              </a>
+            </Link>
+            <Link href ="#">
+              <a className={styles.featured}>
+                <span>Featured</span>
+                <Image src={DownArrowIconBlack} alt="icon"/>
+              </a>
+            </Link>
+            <Link href ="#">
               About Us
-            </NavLink>
-            <NavLink href='#'>
+            </Link>
+            <Link href ="#">
               Blog
-            </NavLink>
-            <PromotionContainer>
-              <Image src={GiftIcon} alt="find-store"/>
-              <span>Promotion</span>
-            </PromotionContainer>
-          </PageLinks>
-        </DepartmentsAndPageLinks>
-        <CurrencyAndLanguage>
-          <CurrencyContainer>
+            </Link>
+            <Link href ="#">
+              <a className={styles.promotion}>
+                <Image src={GiftIcon} alt="icon"/>
+                <span>Promotion</span>
+              </a>
+            </Link>
+          </div>
+        </div>
+        <div className={styles.currencyLanguages}>
+          <div className={styles.currency}>
             <span>&#8373; GHS</span>
             <Image src={DownArrowIconBlack} alt="icon"/>
-          </CurrencyContainer>
-          <Image src={LineIcon} alt="find-store"/>
-          <LanguageContainer>
+          </div>
+          <Image src={LineIcon} alt="icon"/>
+          <div className={styles.language}>
             <span>English</span>
             <Image src={DownArrowIconBlack} alt="icon"/>
-          </LanguageContainer>
-        </CurrencyAndLanguage>
-      </LayerThree>
-    </Container>
+          </div>
+        </div>
+      </div>
+    </div>
   )
 }
 
-export default Header;
+export default Header
