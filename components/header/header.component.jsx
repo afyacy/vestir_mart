@@ -5,12 +5,7 @@ import Link from 'next/link'
 import DownArrowIconWhite from '../../public/images/icons/chevron-down-white.svg'
 import RightArrowIconWhite from '../../public/images/icons/chevron-right.svg'
 import SearchIcon from '../../public/images/icons/search.svg'
-import UserIcon from '../../public/images/icons/user.svg'
-import RepeatIcon from '../../public/images/icons/repeat.svg'
-import HeartIcon from '../../public/images/icons/heart.svg'
-import CartIcon from '../../public/images/icons/cart.svg'
 import MenuIcon from '../../public/images/icons/menu.svg'
-import DownArrowIconBlack from '../../public/images/icons/chevron-down-black.svg'
 import GiftIcon from '../../public/images/icons/gift.svg'
 
 const Header = () => {
