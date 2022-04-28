@@ -1,0 +1,313 @@
+@import './colors';
+
+/* Shadow */
+.shadow-sm {
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.shadow-base {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
+}
+
+.shadow-md {
+  box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.shadow-lg {
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.shadow-xl {
+  box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.1), 0px 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.shadow-2xl {
+  box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.shadow-inner {
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+
+/* Text Styles */
+
+@mixin text-xs-normal {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.text-xs-medium {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.text-xs-semibold {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.text-sm-normal {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.text-sm-medium {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.text-sm-semibold {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.text-base-normal {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.text-base-medium {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.text-base-semibold {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.text-base-bold {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.text-lg-normal {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.text-lg-medium {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.text-lg-semibold {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.text-lg-bold {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.text-xl-normal {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.text-xl-medium {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.text-xl-semibold {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.text-2xl-normal {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.text-2xl-medium {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.text-2xl-semibold {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.text-2xl-bold {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.text-3xl-light {
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.text-3xl-normal {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.text-3xl-semibold {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.text-3xl-bold {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.text-3xl-extrabold {
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.text-4xl-light {
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.text-4xl-normal {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.text-4xl-semibold {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.text-4xl-bold {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.text-5xl-normal {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 48px;
+}
+
+.text-5xl-medium {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 48px;
+}
+
+.text-5xl-bold {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+}
+
+.text-6xl-normal {
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 60px;
+}
+
+.text-6xl-semibold {
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 60px;
+}
+
+.text-6xl-bold {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 60px;
+}
+
+@font-face {
+  font-family: 'Inter-Black';
+  src: url('../public/font/Inter/inter/Inter-Black.ttf');
+}
+
+@font-face {
+  font-family: 'Inter-Bold';
+  src: url('../public/font/Inter/inter/Inter-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Inter-Regular';
+  src: url('../public/font/Inter/inter/Inter-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Inter-ExtraBold';
+  src: url('../public/font/Inter/inter/Inter-ExtraBold.ttf');
+}
+
+@font-face {
+  font-family: 'Inter-ExtraLight';
+  src: url('../public/font/Inter/inter/Inter-ExtraLight.ttf');
+}
+
+@font-face {
+  font-family: 'Inter-Light';
+  src: url('../public/font/Inter/inter/Inter-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Inter-Medium';
+  src: url('../public/font/Inter/inter/Inter-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'Inter-Regular';
+  src: url('../public/font/Inter/inter/Inter-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Inter-SemiBold';
+  src: url('../public/font/Inter/inter/Inter-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'Inter-Thin';
+  src: url('../public/font/Inter/inter/Inter-Thin.ttf');
+}
+
+@font-face {
+  font-family: 'Nunito-Black';
+  src: url('../public/font/nunito/Nunito-Black.ttf');
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
